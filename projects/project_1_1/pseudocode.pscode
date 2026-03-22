@@ -1,0 +1,43 @@
+===== Project 1 Pseudocode =====
+
+── BankAccount (Base Class) ─────────────────────────────────
+  ATTRIBUTES:
+    firstName, lastName, accountID, balance (starts at 0)
+
+  METHODS:
+    deposit(amount)       → balance = balance + amount
+    withdrawal(amount)    → balance = balance - amount
+    accountSummary()      → print firstName, lastName, accountID, balance
+    getters / setters     → for all attributes
+
+
+── CheckingAccount (Extends BankAccount) ────────────────────
+  ADDITIONAL ATTRIBUTE:
+    interestRate
+
+  METHODS:
+    processWithdrawal(amount):
+      newBalance = balance - amount
+      IF newBalance < 0:
+        deduct $30 overdraft fee
+        print negative balance + fee notice
+      ELSE:
+        withdraw normally
+
+    displayAccount():
+      call accountSummary() from BankAccount
+      print interestRate
+
+
+── Main (Testing) ───────────────────────────────────────────
+  CREATE BankAccount("Ahmed", "Lotfey", 1001)
+    deposit $500      → print summary
+    withdraw $200     → print summary
+    test setters/getters
+
+  CREATE CheckingAccount("Ahmed", "Lotfey", 2001, 2.5%)
+    display account
+    deposit $300      → display account
+    withdraw $100     → no overdraft → display account
+    withdraw $500     → overdraft triggered → display account
+    set new interest rate → print rate
