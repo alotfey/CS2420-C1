@@ -61,6 +61,6 @@ public class BankAccount {
     public void accountSummary() {
         System.out.println("Account Holder: " + firstName + " " + lastName);
         System.out.println("Account ID:     " + accountID);
-        System.out.println("Balance:        $" + balance);
+        System.out.printf("Balance:        $%.2f%n", balance);
     }
 }
