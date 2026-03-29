@@ -20,8 +20,8 @@ In this course, students will focus on advanced concepts in object-oriented prog
 ## Projects
 
 - [x] Project_1_1
-- [ ] Project_2_1
-- [ ] Project_2_2
+- [x] Project_2_1
+- [x] Project_2_2
 - [ ] Project_3_1
 - [ ] Project_3_2
 - [ ] Project_4_1
