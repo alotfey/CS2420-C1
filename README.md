@@ -22,10 +22,10 @@ In this course, students will focus on advanced concepts in object-oriented prog
 - [x] Project_1_1
 - [x] Project_2_1
 - [x] Project_2_2
-- [ ] Project_3_1
-- [ ] Project_3_2
-- [ ] Project_4_1
-- [ ] Project_5_1
+- [x] Project_3_1
+- [x] Project_3_2
+- [x] Project_4_1
+- [x] Project_5_1
 - [ ] Project_6_1
 - [ ] Project_6_2
 - [ ] Project_7_1
